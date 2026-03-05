@@ -3,6 +3,7 @@ layout: post
 title: "Thoughts on Graph Driven Development"
 date: 2026-03-05
 lang: en
+ref: graph-driven-development
 categories: blog
 ---
 

@@ -1,11 +1,31 @@
 {%- assign current_lang = page.lang | default: site.lang | default: "ko" -%}
 {%- if current_lang == "ko" -%}
   {%- assign switch_lang = "en" -%}
-  {%- assign switch_url = page.url | prepend: "/en" -%}
 {%- else -%}
   {%- assign switch_lang = "ko" -%}
-  {%- assign switch_url = page.url | replace: "/en/", "/" | replace: "/en", "/" -%}
 {%- endif -%}
+
+{%- assign switch_url = nil -%}
+
+{%- if page.ref -%}
+  {%- assign all_pages = site.pages | where: "ref", page.ref | where: "lang", switch_lang -%}
+  {%- if all_pages.size > 0 -%}
+    {%- assign switch_url = all_pages[0].url -%}
+  {%- else -%}
+    {%- assign all_posts = site.posts | where: "ref", page.ref | where: "lang", switch_lang -%}
+    {%- if all_posts.size > 0 -%}
+      {%- assign switch_url = all_posts[0].url -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- unless switch_url -%}
+  {%- if switch_lang == "en" -%}
+    {%- assign switch_url = "/en/" -%}
+  {%- else -%}
+    {%- assign switch_url = "/" -%}
+  {%- endif -%}
+{%- endunless -%}
 
 {%- assign t = site.data.i18n[current_lang] -%}
 

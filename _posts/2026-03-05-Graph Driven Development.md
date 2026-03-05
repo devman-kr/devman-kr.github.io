@@ -3,6 +3,7 @@ layout: post
 title: "Graph Driven Development에 대한 고찰"
 date: 2026-03-05
 lang: ko
+ref: graph-driven-development
 categories: blog
 ---
 

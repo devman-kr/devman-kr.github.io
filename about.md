@@ -2,6 +2,7 @@
 layout: page
 title: 소개
 lang: ko
+ref: about
 permalink: /about/
 ---
 
