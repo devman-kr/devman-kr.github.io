@@ -4,3 +4,16 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("code.language-mermaid").forEach(function (code) {
+      var pre = code.parentElement;
+      var div = document.createElement("div");
+      div.className = "mermaid";
+      div.textContent = code.textContent;
+      pre.parentElement.replaceChild(div, pre);
+    });
+    mermaid.initialize({ startOnLoad: true });
+  });
+</script>
