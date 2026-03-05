@@ -20,7 +20,7 @@ default_lang: "ko"
 
 # Minima settings
 minima:
-  skin: classic
+  skin: dark
   date_format: "%Y-%m-%d"
   social_links:
     - title: GitHub
