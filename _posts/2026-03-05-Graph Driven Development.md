@@ -35,11 +35,11 @@ Claude Opus 4.6이 출시 된 이후로 개인적으로 진행하는 모든 프�
 ## 그래프
 <div style="display: flex; gap: 10px; align-items: flex-start;">
   <figure style="flex: 1; margin: 0;">
-    <img src="../assets/images/2026-03-05-Graph Driven Development/docs_example.png" alt="기존 문서들" style="width: 100%; height: 400px; object-fit: contain;">
+    <img src="{{ '/assets/images/2026-03-05-Graph Driven Development/docs_example.png' | relative_url }}" alt="기존 문서들" style="width: 100%; height: 400px; object-fit: contain;">
     <figcaption style="text-align: center; color: gray;">기존 문서들</figcaption>
   </figure>
   <figure style="flex: 1; margin: 0;">
-    <img src="../assets/images/2026-03-05-Graph Driven Development/graph_example_1.png" alt="프로젝트 그래프" style="width: 100%; height: 400px; object-fit: contain;">
+    <img src="{{ '/assets/images/2026-03-05-Graph Driven Development/graph_example_1.png' | relative_url }}" alt="프로젝트 그래프" style="width: 100%; height: 400px; object-fit: contain;">
     <figcaption style="text-align: center; color: gray;">그래프화 한 프로젝트 관계도 (by Mermaid)</figcaption>
   </figure>
 </div>
