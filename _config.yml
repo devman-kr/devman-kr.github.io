@@ -6,7 +6,7 @@ url: "https://devman-kr.github.io"
 lang: ko
 
 author:
-  name: devman
+  name: devman-kr
 
 # Build settings
 markdown: kramdown
@@ -25,7 +25,7 @@ minima:
   social_links:
     - title: GitHub
       icon: github
-      url: "https://github.com/devman"
+      url: "https://github.com/devman-kr"
 
 # Exclude from processing
 exclude:
