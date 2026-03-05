@@ -1,12 +1,11 @@
 title: Devman Blog
-description: >-
-  개발 블로그입니다.
+description: ""
 baseurl: ""
 url: "https://devman-kr.github.io"
 lang: ko
 
 author:
-  name: devman-kr
+  name: ""
 
 # Build settings
 markdown: kramdown

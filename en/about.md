@@ -6,4 +6,4 @@ ref: about
 permalink: /en/about/
 ---
 
-This is the about page. Edit this content to introduce yourself.
+준비중입니다.
